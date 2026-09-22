@@ -1,3 +1,5 @@
+from data import Event, EventType
+
 class Role:
     """Base class for all roles."""
 
@@ -124,4 +126,6 @@ class ScarletWoman(Minion):
 
 class Imp(Demon):
     """Class representing the Imp role."""
-    pass
+
+    def use_ability(self, target):
+        target.alive = False

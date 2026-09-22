@@ -52,6 +52,9 @@ character_counts = {
 }
 
 def assign_roles(num_players=10):
+    """Takes in a player count, randomizes roles, and assigns them to each
+    player."""
+
     roles = []
     players = []
     num_townsfolk = character_counts[num_players][0]
@@ -111,9 +114,12 @@ def assign_roles(num_players=10):
 
     return players
 
-players = assign_roles()
 
-for player in players:
-    print(player)
-    if player.drunk:
-        print("This player is drunk!")
+if __name__ == "__main__":
+
+    players = assign_roles()
+
+    for player in players:
+        print(player)
+        if player.drunk:
+            print("This player is drunk!")
