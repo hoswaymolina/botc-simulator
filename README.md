@@ -15,13 +15,16 @@ applications.
 
 - Player/Role classes
 - Role assignment system
+- Imp actions
+- Random voting
+- Execution
+- Game Simulation
+- Game data JSON dump
 
 ## Planned Features
 
-- Game phases
-- Night actions
-- Voting system
-- Full game simulation
+- All Night Actions
+- Smart Voting system
 - Statistical analysis
 - Machine learning experiments
 
